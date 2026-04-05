@@ -1,0 +1,9 @@
+{
+  "name": "Illuminismo — Modulo didattico",
+  "short_name": "Illuminismo",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4efe9",
+  "theme_color": "#1f4f7c",
+  "icons": []
+}

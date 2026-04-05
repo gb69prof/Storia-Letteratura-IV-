@@ -1,0 +1,1 @@
+PWA statica del modulo Illuminismo. Apri index.html oppure pubblica l'intera cartella su GitHub Pages.
