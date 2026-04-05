@@ -1,0 +1,9 @@
+{
+  "name": "Parini – PWA didattica",
+  "short_name": "Parini",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f2eee6",
+  "theme_color": "#20344a",
+  "icons": []
+}
