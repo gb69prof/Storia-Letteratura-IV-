@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1a2a">
+  <title>Le opere principali — Ugo Foscolo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .opere-layout { max-width: 900px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+    .opere-intro { max-width: 820px; margin: 0 auto 3rem; }
+    .opere-intro p { font-family:var(--font-lettura); font-size:1.05rem; line-height:1.85; color:var(--testo); text-align:justify; }
+
+    .sezione-opera { background:var(--bianco); border:1px solid var(--seppia-pale); border-radius:var(--raggio); box-shadow:var(--ombra); margin-bottom:2.5rem; overflow:hidden; }
+    .sezione-opera__header { background:linear-gradient(120deg, var(--bordeaux-dark) 0%, var(--bordeaux) 100%); color:var(--panna); padding:1.5rem 2rem; display:flex; align-items:flex-start; gap:1.25rem; }
+    .sezione-opera__num { font-family:var(--font-titoli); font-size:2rem; color:var(--oro); opacity:0.7; line-height:1; flex-shrink:0; margin-top:0.1rem; }
+    .sezione-opera__titolo { font-family:var(--font-titoli); font-size:1.35rem; letter-spacing:0.06em; color:var(--panna); margin-bottom:0.3rem; }
+    .sezione-opera__date { font-size:0.8rem; color:var(--seppia-chiara); letter-spacing:0.1em; text-transform:uppercase; }
+    .sezione-opera__desc { font-family:var(--font-corpo); font-style:italic; color:var(--panna-scura); font-size:0.92rem; margin-top:0.5rem; line-height:1.5; opacity:0.9; }
+    .sezione-opera__body { padding:1.5rem 2rem; }
+    .sezione-opera__etichetta { font-family:var(--font-titoli); font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--seppia); margin-bottom:0.75rem; }
+
+    .sotto-lezioni { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:0.85rem; }
+    .sotto-lezione { display:flex; align-items:center; gap:0.85rem; padding:0.85rem 1rem; border:1px solid var(--panna-scura); border-radius:var(--raggio); text-decoration:none; color:var(--testo); background:var(--panna); transition:all var(--transizione); }
+    .sotto-lezione:hover { border-color:var(--bordeaux); background:var(--bianco); box-shadow:0 2px 8px rgba(107,26,42,0.1); transform:translateY(-1px); }
+    .sotto-lezione__num { font-family:var(--font-titoli); font-size:0.72rem; color:var(--bianco); background:var(--bordeaux); border-radius:50%; width:28px; height:28px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .sotto-lezione__titolo { font-family:var(--font-corpo); font-size:0.92rem; font-weight:600; color:var(--bordeaux); line-height:1.3; }
+    .sotto-lezione__sub { font-size:0.78rem; color:var(--testo-muted); margin-top:0.1rem; }
+    .sotto-lezione__freccia { margin-left:auto; color:var(--oro); font-size:0.9rem; flex-shrink:0; transition:transform var(--transizione); }
+    .sotto-lezione:hover .sotto-lezione__freccia { transform:translateX(3px); }
+
+    .sezione-opera__prog { margin-top:1rem; display:flex; align-items:center; gap:0.75rem; }
+    .sezione-opera__prog-label { font-size:0.75rem; color:var(--testo-muted); white-space:nowrap; }
+    .sezione-opera__prog-barra { flex:1; height:4px; background:var(--panna-scura); border-radius:2px; }
+    .sezione-opera__prog-fill { height:100%; background:linear-gradient(90deg, var(--bordeaux), var(--oro)); border-radius:2px; transition:width 0.6s ease; width:0%; }
+
+    @media (max-width:600px) {
+      .sezione-opera__header { flex-direction:column; gap:0.5rem; }
+      .sezione-opera__num { font-size:1.4rem; }
+      .sotto-lezioni { grid-template-columns:1fr; }
+      .sezione-opera__body { padding:1rem; }
+    }
+  </style>
+</head>
+<body data-pagina="opere">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html">
+        <div class="site-header__monogram">UF</div>
+        <div>
+          <div class="site-header__title">Ugo Foscolo</div>
+          <div class="site-header__subtitle">Quinto anno &middot; Liceo</div>
+        </div>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html">Indice</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Indice</a>
+    <span>›</span>
+    <span>Le opere principali</span>
+  </div>
+
+  <div class="opere-layout">
+
+    <div style="text-align:center; margin-bottom:2.5rem;">
+      <p style="font-family:var(--font-titoli);font-size:0.8rem;letter-spacing:0.2em;color:var(--bordeaux);text-transform:uppercase;">Lezione VI</p>
+      <h1 style="font-family:var(--font-titoli);font-size:2rem;color:var(--bordeaux);margin:0.4rem 0 0.8rem;letter-spacing:0.06em;">Le opere principali</h1>
+      <div style="width:50px;height:1px;background:var(--oro);margin:0 auto;"></div>
+    </div>
+
+    <div class="opere-intro">
+      <p>Tre risposte diverse allo stesso problema — come si vive sapendo che il mondo è senza fondamento. L'<em>Ortis</em> mostra cosa accade quando tutte le illusioni crollano insieme. I <em>Sepolcri</em> costruiscono la risposta civile: la memoria come resistenza al nulla. <em>Le Grazie</em> immaginano la bellezza come nuova divinità laica. I <em>Sonetti</em> concentrano il dolore nella forma più chiusa e precisa che la tradizione italiana conosce.</p>
+    </div>
+
+    <!-- JACOPO ORTIS -->
+    <div class="sezione-opera" id="ortis">
+      <div class="sezione-opera__header">
+        <div class="sezione-opera__num">I</div>
+        <div class="sezione-opera__info">
+          <h2 class="sezione-opera__titolo">Le ultime lettere di Jacopo Ortis</h2>
+          <p class="sezione-opera__date">1798 &mdash; edizione definitiva 1816</p>
+          <p class="sezione-opera__desc">Il primo vero romanzo della letteratura italiana moderna. Un patriota deluso, un amore impossibile, la lucidità come condanna.</p>
+        </div>
+      </div>
+      <div class="sezione-opera__body">
+        <p class="sezione-opera__etichetta">Lezioni disponibili</p>
+        <div class="sotto-lezioni">
+          <a class="sotto-lezione" href="ortis08.html" data-lezione-id="ortis08">
+            <span class="sotto-lezione__num">08</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">Introduzione all'Ortis</div>
+              <div class="sotto-lezione__sub">Genere, trama, analisi filosofica</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+          <a class="sotto-lezione" href="ortis09.html" data-lezione-id="ortis09">
+            <span class="sotto-lezione__num">09</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">Temi principali</div>
+              <div class="sotto-lezione__sub">Amore, esilio, suicidio, illusione</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+          <a class="sotto-lezione" href="ortis10.html" data-lezione-id="ortis10">
+            <span class="sotto-lezione__num">10</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">Riassunto per capitoli</div>
+              <div class="sotto-lezione__sub">Parte prima e seconda, lettera per lettera</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+          <a class="sotto-lezione" href="ortis11.html" data-lezione-id="ortis11">
+            <span class="sotto-lezione__num">11</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">L'incontro con Parini</div>
+              <div class="sotto-lezione__sub">Il brano più alto della prosa foscoliana</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+        </div>
+        <div class="sezione-opera__prog">
+          <span class="sezione-opera__prog-label">Progresso sezione</span>
+          <div class="sezione-opera__prog-barra">
+            <div class="sezione-opera__prog-fill" data-ids="ortis08,ortis09,ortis10,ortis11"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DEI SEPOLCRI -->
+    <div class="sezione-opera" id="sepolcri">
+      <div class="sezione-opera__header">
+        <div class="sezione-opera__num">II</div>
+        <div class="sezione-opera__info">
+          <h2 class="sezione-opera__titolo">Dei Sepolcri</h2>
+          <p class="sezione-opera__date">1807</p>
+          <p class="sezione-opera__desc">Carme civile in endecasillabi sciolti. La tomba non serve ai morti: serve ai vivi. La poesia è il sepolcro che non si può demolire.</p>
+        </div>
+      </div>
+      <div class="sezione-opera__body">
+        <p class="sezione-opera__etichetta">Lezioni disponibili</p>
+        <div class="sotto-lezioni">
+          <a class="sotto-lezione" href="sepolcri12.html" data-lezione-id="sepolcri12">
+            <span class="sotto-lezione__num">12</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">Dei Sepolcri</div>
+              <div class="sotto-lezione__sub">Contesto, struttura, temi, forma e stile</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+          <a class="sotto-lezione" href="sepolcri13.html" data-lezione-id="sepolcri13">
+            <span class="sotto-lezione__num">13</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">La religione delle illusioni</div>
+              <div class="sotto-lezione__sub">Approfondimento critico e concettuale</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+        </div>
+        <div class="sezione-opera__prog">
+          <span class="sezione-opera__prog-label">Progresso sezione</span>
+          <div class="sezione-opera__prog-barra">
+            <div class="sezione-opera__prog-fill" data-ids="sepolcri12,sepolcri13"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LE GRAZIE -->
+    <div class="sezione-opera" id="grazie">
+      <div class="sezione-opera__header">
+        <div class="sezione-opera__num">III</div>
+        <div class="sezione-opera__info">
+          <h2 class="sezione-opera__titolo">Le Grazie</h2>
+          <p class="sezione-opera__date">1803–1815 &mdash; incompiuto</p>
+          <p class="sezione-opera__desc">La bellezza come nuova religione laica. Aglaia, Eufrosine, Talia: non dee decorative, ma forze che trasformano la barbarie in civiltà.</p>
+        </div>
+      </div>
+      <div class="sezione-opera__body">
+        <p class="sezione-opera__etichetta">Lezioni disponibili</p>
+        <div class="sotto-lezioni">
+          <a class="sotto-lezione" href="grazie14.html" data-lezione-id="grazie14">
+            <span class="sotto-lezione__num">14</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">Le Grazie</div>
+              <div class="sotto-lezione__sub">Forma, simboli, significato profondo</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+        </div>
+        <div class="sezione-opera__prog">
+          <span class="sezione-opera__prog-label">Progresso sezione</span>
+          <div class="sezione-opera__prog-barra">
+            <div class="sezione-opera__prog-fill" data-ids="grazie14"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- I SONETTI -->
+    <div class="sezione-opera" id="sonetti">
+      <div class="sezione-opera__header">
+        <div class="sezione-opera__num">IV</div>
+        <div class="sezione-opera__info">
+          <h2 class="sezione-opera__titolo">I Sonetti</h2>
+          <p class="sezione-opera__date">1802–1803</p>
+          <p class="sezione-opera__desc">Piccoli monumenti poetici. Forma chiusa, tensione interiore romantica: ogni parola porta peso, ogni immagine è necessaria.</p>
+        </div>
+      </div>
+      <div class="sezione-opera__body">
+        <p class="sezione-opera__etichetta">Lezioni disponibili</p>
+        <div class="sotto-lezioni">
+          <a class="sotto-lezione" href="sonetti15.html" data-lezione-id="sonetti15">
+            <span class="sotto-lezione__num">15</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">I Sonetti</div>
+              <div class="sotto-lezione__sub">In morte del fratello &mdash; Alla sera &mdash; A Zacinto</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+          <a class="sotto-lezione" href="sonetti16.html" data-lezione-id="sonetti16">
+            <span class="sotto-lezione__num">16</span>
+            <div class="sotto-lezione__testo">
+              <div class="sotto-lezione__titolo">Alla sera — Analisi</div>
+              <div class="sotto-lezione__sub">Testo, parafrasi, commento filosofico</div>
+            </div>
+            <span class="sotto-lezione__freccia">&#8594;</span>
+          </a>
+        </div>
+        <div class="sezione-opera__prog">
+          <span class="sezione-opera__prog-label">Progresso sezione</span>
+          <div class="sezione-opera__prog-barra">
+            <div class="sezione-opera__prog-fill" data-ids="sonetti15,sonetti16"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="lezione-nav" style="margin-top:1rem;">
+      <a class="btn-nav" href="poetica.html">&#8592; La poetica</a>
+      <a class="btn-nav btn-nav--primary" href="conclusione.html">Conclusione &#8594;</a>
+    </nav>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>Materiali didattici su <strong>Ugo Foscolo</strong> &mdash; Quinto anno di Liceo</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
+    document.addEventListener('DOMContentLoaded', () => {
+      const p = JSON.parse(localStorage.getItem('foscolo_progresso') || '{}');
+      document.querySelectorAll('.sezione-opera__prog-fill').forEach(fill => {
+        const ids = fill.dataset.ids.split(',');
+        const media = ids.reduce((acc, id) => acc + (p[id] || 0), 0) / ids.length;
+        fill.style.width = Math.round(media) + '%';
+      });
+    });
+  </script>
+</body>
+</html>

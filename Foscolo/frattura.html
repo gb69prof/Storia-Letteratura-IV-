@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1a2a">
+  <title>La frattura iniziale — Ugo Foscolo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="frattura">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html">
+        <div class="site-header__monogram">UF</div>
+        <div>
+          <div class="site-header__title">Ugo Foscolo</div>
+          <div class="site-header__subtitle">Quinto anno &middot; Liceo</div>
+        </div>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html">Indice</a>
+        <button class="btn-header" id="btn-concentrazione">&#9635; Concentrazione</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Indice</a>
+    <span>›</span>
+    <span>La frattura iniziale</span>
+  </div>
+
+  <div class="lezione-layout">
+    <article class="lezione-contenuto">
+      <div class="lezione-num">Lezione III</div>
+<h1>La frattura iniziale</h1>
+<p>C'è un momento preciso in cui il pensiero di Foscolo si spezza, o meglio: in cui la spaccatura che già esisteva in lui diventa insanabile. Quel momento è il 1797, con il Trattato di Campoformio. Napoleone cede Venezia all'Austria come se fosse merce di scambio. Per Foscolo, che aveva creduto negli ideali rivoluzionari e aveva visto nella Francia la possibilità di una patria libera, è una doppia sconfitta: politica e filosofica insieme.</p>
+<p>Politica, perché rivela che il potere — anche quello che si presenta come liberatore — obbedisce alle stesse logiche di sempre: calcolo, dominio, tradimento. La storia non progredisce verso la giustizia; procede secondo meccanismi che schiacciano gli individui e i popoli senza distinzioni morali.</p>
+<p>Filosofica, perché questa sconfitta non è un incidente: è la conferma concreta di ciò che il meccanicismo già affermava in astratto. Il mondo è indifferente ai valori. La bellezza non protegge. Il coraggio non basta. La verità non vince. E tuttavia — ed è qui il nucleo della frattura — Foscolo non può smettere di desiderare che le cose stessero diversamente. Non può semplicemente prendere atto del nulla e andare avanti. Il dolore che sente di fronte all'ingiustizia è reale, e quella realtà del dolore è già, in qualche modo, una resistenza al nulla.</p>
+<p>Questa è la frattura che genera tutta la sua opera: da un lato la ragione che dice che non c'è nulla da salvare, dall'altro il cuore che non accetta questa sentenza. Non si tratta di un conflitto tra fede e ateismo, né tra ottimismo e pessimismo. Si tratta di qualcosa di più preciso: la tensione tra la verità che si vede chiaramente e il bisogno umano di costruire comunque un senso, sapendo che è una costruzione.</p>
+<p>Jacopo Ortis è il personaggio in cui questa frattura si manifesta nella forma più acuta. Vede crollare la patria, vede l'amore impossibile, vede ogni illusione disfarsi una dopo l'altra — e sceglie il suicidio non come resa, ma come l'unico atto coerente con la propria lucidità. Foscolo non risolve la frattura: la porta con sé in tutta la sua opera, e ne fa il motore di una ricerca che non ha sbocchi consolatori ma che non rinuncia mai alla dignità.</p>
+
+      <nav class="lezione-nav">
+        <a class="btn-nav" href="filosofia.html">&#8592; La filosofia di base</a>
+        <a class="btn-nav btn-nav--primary" href="mondo.html">L'immagine del mondo &#8594;</a>
+      </nav>
+    </article>
+
+    <aside class="lezione-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9998; Appunti personali</div>
+        <div class="sidebar-card__body">
+          <textarea id="appunti-textarea" placeholder="Scrivi qui i tuoi appunti…"></textarea>
+          <button class="sidebar-btn" id="note-salva">Salva appunti</button>
+          <button class="sidebar-btn" id="note-esporta">Esporta .txt</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#11835; Evidenziazioni</div>
+        <div class="sidebar-card__body">
+          <div class="evidenziazioni-lista" id="ev-lista">
+            <span style="color:var(--testo-muted);font-size:0.8rem;font-style:italic">Nessuna evidenziazione</span>
+          </div>
+          <button class="sidebar-btn" id="ev-a-note">Aggiungi agli appunti</button>
+          <button class="sidebar-btn" id="ev-svuota">Svuota evidenziazioni</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9656; Avanzamento lettura</div>
+        <div class="sidebar-card__body">
+          <p class="progresso-lezione">Lettura: 0%</p>
+          <div class="barra-progresso"><div class="barra-progresso__fill"></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="overlay-fullscreen" id="overlay-fullscreen">
+    <span class="overlay-chiudi" id="overlay-chiudi">&times;</span>
+    <img id="overlay-img" src="" alt="">
+  </div>
+
+  <button class="banner-concentrazione" id="banner-concentrazione">&#9635; Esci dalla concentrazione</button>
+
+  <footer class="site-footer">
+    <p>Materiali didattici su <strong>Ugo Foscolo</strong> &mdash; Quinto anno di Liceo</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+</body>
+</html>

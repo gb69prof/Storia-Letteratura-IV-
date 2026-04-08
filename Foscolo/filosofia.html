@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1a2a">
+  <title>La filosofia di base — Ugo Foscolo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="filosofia">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html">
+        <div class="site-header__monogram">UF</div>
+        <div>
+          <div class="site-header__title">Ugo Foscolo</div>
+          <div class="site-header__subtitle">Quinto anno &middot; Liceo</div>
+        </div>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html">Indice</a>
+        <button class="btn-header" id="btn-concentrazione">&#9635; Concentrazione</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Indice</a>
+    <span>›</span>
+    <span>La filosofia di base</span>
+  </div>
+
+  <div class="lezione-layout">
+    <article class="lezione-contenuto">
+      <div class="lezione-num">Lezione II</div>
+<h1>La filosofia di base</h1>
+<div class="video-lezione">
+<iframe src="https://app.heygen.com/embeds/b11da5db374641a9aba20889e3363adb" title="Foscolo meccanicismo" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+<p>Il punto di partenza del pensiero di Foscolo è radicale e non ammette compromessi: l'universo è una macchina governata da leggi fisiche impersonali, e l'uomo non è altro che materia destinata a dissolversi. Non esiste un Dio che salvi, non esiste un'anima immortale, non esiste un aldilà in cui i conti vengano pareggiati. Con la morte, tutto si spegne nel nulla eterno.</p>
+<p>Questa posizione, che Foscolo eredita dal meccanicismo secentesco e settecentesco e da autori come Lucrezio, Locke e Rousseau, ha conseguenze che il poeta non cerca di attenuare. Se non c'è anima, non c'è colpa eterna: la morte diventa un riposo, non una punizione. Se non c'è aldilà, non c'è nemmeno consolazione religiosa: il dolore non ha senso, l'ingiustizia non viene riparata, il coraggio non riceve ricompensa. L'universo è indifferente all'uomo quanto lo è alle pietre.</p>
+<p>Eppure Foscolo non si ferma qui. Sarebbe troppo semplice — e anche troppo comodo — liquidare tutto con un nichilismo rassegnato. Il problema che lo ossessiona è diverso: sapendo tutto questo, come si fa a vivere? Come si sopporta la consapevolezza del nulla senza esserne schiacciati?</p>
+<p>La risposta che elabora è quella che i suoi testi chiamano «religione delle illusioni». Poiché la natura non offre consolazione, è la coscienza umana a doverla costruire. Amore, patria, bellezza, poesia, memoria: nessuna di queste cose ha fondamento metafisico, nessuna è garantita da una legge divina, eppure tutte sono necessarie. Necessarie non nel senso che siano vere, ma nel senso che senza di esse l'uomo non riesce a stare in piedi di fronte alla verità del nulla. Foscolo non pretende di ingannare se stesso: sa benissimo che si tratta di costruzioni. Ma le considera ugualmente indispensabili, anzi le celebra proprio in quanto tali — come atti di resistenza consapevole contro il vuoto.</p>
+<p>Il motto che Foscolo sceglie per sé — <em>Vitam impendere vero</em>, «impiegare la vita per la verità», ripreso da Giovenale — dice qualcosa di preciso su questa postura: non si tratta di cercare conforto nell'illusione dimenticando che è illusione, ma di tenere insieme le due cose, la lucidità e il bisogno di senso, senza sacrificarne nessuna. È una posizione intellettualmente scomoda, e Foscolo non la abbandona mai.</p>
+
+      <nav class="lezione-nav">
+        <a class="btn-nav" href="vita.html">&#8592; La vita</a>
+        <a class="btn-nav btn-nav--primary" href="frattura.html">La frattura iniziale &#8594;</a>
+      </nav>
+    </article>
+
+    <aside class="lezione-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9998; Appunti personali</div>
+        <div class="sidebar-card__body">
+          <textarea id="appunti-textarea" placeholder="Scrivi qui i tuoi appunti…"></textarea>
+          <button class="sidebar-btn" id="note-salva">Salva appunti</button>
+          <button class="sidebar-btn" id="note-esporta">Esporta .txt</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#11835; Evidenziazioni</div>
+        <div class="sidebar-card__body">
+          <div class="evidenziazioni-lista" id="ev-lista">
+            <span style="color:var(--testo-muted);font-size:0.8rem;font-style:italic">Nessuna evidenziazione</span>
+          </div>
+          <button class="sidebar-btn" id="ev-a-note">Aggiungi agli appunti</button>
+          <button class="sidebar-btn" id="ev-svuota">Svuota evidenziazioni</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9656; Avanzamento lettura</div>
+        <div class="sidebar-card__body">
+          <p class="progresso-lezione">Lettura: 0%</p>
+          <div class="barra-progresso"><div class="barra-progresso__fill"></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="overlay-fullscreen" id="overlay-fullscreen">
+    <span class="overlay-chiudi" id="overlay-chiudi">&times;</span>
+    <img id="overlay-img" src="" alt="">
+  </div>
+
+  <button class="banner-concentrazione" id="banner-concentrazione">&#9635; Esci dalla concentrazione</button>
+
+  <footer class="site-footer">
+    <p>Materiali didattici su <strong>Ugo Foscolo</strong> &mdash; Quinto anno di Liceo</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+</body>
+</html>

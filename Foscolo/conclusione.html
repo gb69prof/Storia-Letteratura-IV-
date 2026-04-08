@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1a2a">
+  <title>Conclusione — Ugo Foscolo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="conclusione">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html">
+        <div class="site-header__monogram">UF</div>
+        <div>
+          <div class="site-header__title">Ugo Foscolo</div>
+          <div class="site-header__subtitle">Quinto anno &middot; Liceo</div>
+        </div>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html">Indice</a>
+        <button class="btn-header" id="btn-concentrazione">&#9635; Concentrazione</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Indice</a>
+    <span>›</span>
+    <span>Conclusione</span>
+  </div>
+
+  <div class="lezione-layout">
+    <article class="lezione-contenuto">
+      <div class="lezione-num">Lezione VII</div>
+<h1>Conclusione</h1>
+<p>Foscolo è uno di quegli autori che non si lasciano ridurre a un'etichetta. Non è semplicemente «neoclassico» né semplicemente «preromantico»: è il punto in cui queste due correnti si scontrano senza risolversi, generando un'opera che porta i segni di quella tensione in ogni pagina.</p>
+<p>Il dato più caratteristico del suo pensiero è la lucidità con cui affronta il nulla — e il rifiuto di fermarsi lì. Sa che non c'è Dio, non c'è aldilà, non c'è progresso garantito della storia. Sa che le illusioni sono illusioni. Eppure costruisce quelle illusioni con tutta la cura e l'intelligenza di cui dispone, perché ritiene che sia la cosa più onesta che un uomo possa fare di fronte alla verità. Questa posizione non è contraddittoria: è semplicemente difficile da sostenere, e Foscolo la sostiene fino in fondo.</p>
+<p>La sua opera è il risultato di questa fatica. I <em>Sepolcri</em> non consolano con la promessa di un aldilà: consolano con la forza della memoria e la dignità dell'esempio. L'<em>Ortis</em> non offre vie d'uscita: mostra cosa succede quando le illusioni crollano tutte insieme e non ne rimane nessuna. <em>Le Grazie</em> non propone una soluzione: immagina un mondo in cui l'arte possa ancora tenere a bada la barbarie, sapendo che è un'utopia. I sonetti non attenuano il dolore: lo contengono nella forma, lo rendono comunicabile, lo trasformano in qualcosa che può attraversare il tempo.</p>
+<p>Foscolo è stato definito «il poeta del disincanto e della resistenza». È una formula giusta. Il disincanto è nella premessa — la visione meccanicista, il rifiuto di ogni consolazione religiosa, la consapevolezza del nulla. La resistenza è nell'opera — la scelta di costruire comunque, di scrivere comunque, di rivendicare comunque la dignità dell'uomo in un universo indifferente.</p>
+<p>Per uno studente del quinto anno, Foscolo pone una domanda che non appartiene solo al Settecento o all'Ottocento: come si vive con la consapevolezza che il mondo non è fatto su misura per noi, che le cose non finiscono bene per forza, che il coraggio non garantisce la vittoria? La sua risposta non è rassicurante, ma è seria. E la serietà, in letteratura come nella vita, vale più della consolazione.</p>
+
+      <nav class="lezione-nav">
+        <a class="btn-nav" href="opere.html">&#8592; Le opere principali</a>
+        <a class="btn-nav btn-nav--primary" href="index.html">Torna all'indice &#8594;</a>
+      </nav>
+    </article>
+
+    <aside class="lezione-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9998; Appunti personali</div>
+        <div class="sidebar-card__body">
+          <textarea id="appunti-textarea" placeholder="Scrivi qui i tuoi appunti…"></textarea>
+          <button class="sidebar-btn" id="note-salva">Salva appunti</button>
+          <button class="sidebar-btn" id="note-esporta">Esporta .txt</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#11835; Evidenziazioni</div>
+        <div class="sidebar-card__body">
+          <div class="evidenziazioni-lista" id="ev-lista">
+            <span style="color:var(--testo-muted);font-size:0.8rem;font-style:italic">Nessuna evidenziazione</span>
+          </div>
+          <button class="sidebar-btn" id="ev-a-note">Aggiungi agli appunti</button>
+          <button class="sidebar-btn" id="ev-svuota">Svuota evidenziazioni</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9656; Avanzamento lettura</div>
+        <div class="sidebar-card__body">
+          <p class="progresso-lezione">Lettura: 0%</p>
+          <div class="barra-progresso"><div class="barra-progresso__fill"></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="overlay-fullscreen" id="overlay-fullscreen">
+    <span class="overlay-chiudi" id="overlay-chiudi">&times;</span>
+    <img id="overlay-img" src="" alt="">
+  </div>
+
+  <button class="banner-concentrazione" id="banner-concentrazione">&#9635; Esci dalla concentrazione</button>
+
+  <footer class="site-footer">
+    <p>Materiali didattici su <strong>Ugo Foscolo</strong> &mdash; Quinto anno di Liceo</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+</body>
+</html>

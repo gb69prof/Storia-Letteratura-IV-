@@ -1,0 +1,17 @@
+{
+  "name": "Ugo Foscolo — Lezioni",
+  "short_name": "Foscolo",
+  "description": "Materiali didattici su Ugo Foscolo per il quinto anno",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f0e8",
+  "theme_color": "#6b1a2a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/ritratto.jpg",
+      "sizes": "300x300",
+      "type": "image/jpeg"
+    }
+  ]
+}

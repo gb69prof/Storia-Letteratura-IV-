@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1a2a">
+  <title>La vita — Ugo Foscolo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="vita">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html">
+        <div class="site-header__monogram">UF</div>
+        <div>
+          <div class="site-header__title">Ugo Foscolo</div>
+          <div class="site-header__subtitle">Quinto anno &middot; Liceo</div>
+        </div>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html">Indice</a>
+        <button class="btn-header" id="btn-concentrazione">&#9635; Concentrazione</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Indice</a>
+    <span>›</span>
+    <span>La vita</span>
+  </div>
+
+  <div class="lezione-layout">
+    <article class="lezione-contenuto">
+      <div class="lezione-num">Lezione I</div>
+<h1>La vita</h1>
+<p>Ugo Foscolo nasce il 6 febbraio 1778 a Zante, l'isola greca che i latini chiamavano Zacinto, allora sotto il dominio della Repubblica di Venezia. Il padre è veneziano, la madre greca: questa doppia origine non è un dettaglio biografico secondario, ma una condizione che segnerà in profondità la sua identità di esule, di uomo che appartiene a due mondi e non si sente pienamente a casa in nessuno dei due. Dopo l'infanzia a Zante e un breve soggiorno in Dalmazia, si trasferisce a Venezia nel 1792 con la madre, dove inizia la sua formazione intellettuale tra letteratura classica, ambienti illuministi e fermenti giacobini.</p>
+<p>Il 1797 è l'anno della prima svolta. Foscolo debutta come scrittore con la tragedia <em>Tieste</em> e si schiera apertamente con gli ideali della Rivoluzione Francese. Ma è anche l'anno del Trattato di Campoformio, con cui Napoleone cede Venezia all'Austria come pedina di uno scambio diplomatico. La delusione è bruciante e definitiva: la Rivoluzione che doveva liberare i popoli si rivela strumento di potere. Questa ferita non guarirà mai. Jacopo Ortis, il protagonista del suo romanzo, nasce proprio da questo dolore, e non è difficile riconoscervi il volto dello stesso Foscolo.</p>
+<p>Gli anni successivi sono di esilio interno: Milano, Firenze, Bologna. A Milano pubblica le opere che lo consacrano: le <em>Ultime lettere di Jacopo Ortis</em> (prima versione 1798, edizione definitiva 1816), i Sonetti, l'ode <em>All'amica risanata</em>, il carme <em>Dei Sepolcri</em> (1807) e, incompiuto, <em>Le Grazie</em>. Sono anni di scrittura intensa, ma anche di instabilità personale e politica.</p>
+<p>Nel 1815, con la Restaurazione e il ritorno degli Asburgo, la situazione diventa insostenibile. Foscolo lascia l'Italia per non tornare: prima la Svizzera, poi Londra, dove trascorre gli ultimi dodici anni della sua vita in condizioni sempre più difficili, insegnando, collaborando con giornali, vendendo la propria cultura per sopravvivere. Muore a Londra il 10 settembre 1827. Le sue spoglie saranno trasferite a Firenze, nella basilica di Santa Croce, nel 1871: una tomba in quel tempio degli italiani illustri che lui stesso aveva celebrato nei <em>Sepolcri</em>.</p>
+<p>La vita di Foscolo è dunque una sequenza di perdite: la patria natia, gli ideali politici, la possibilità di una vita stabile, infine l'Italia stessa. Questa condizione di esule permanente non è solo una circostanza biografica: è la struttura profonda della sua visione del mondo, il terreno su cui cresce tutta la sua opera.</p>
+
+      <nav class="lezione-nav">
+        <span></span>
+        <a class="btn-nav btn-nav--primary" href="filosofia.html">La filosofia di base &#8594;</a>
+      </nav>
+    </article>
+
+    <aside class="lezione-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9998; Appunti personali</div>
+        <div class="sidebar-card__body">
+          <textarea id="appunti-textarea" placeholder="Scrivi qui i tuoi appunti…"></textarea>
+          <button class="sidebar-btn" id="note-salva">Salva appunti</button>
+          <button class="sidebar-btn" id="note-esporta">Esporta .txt</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#11835; Evidenziazioni</div>
+        <div class="sidebar-card__body">
+          <div class="evidenziazioni-lista" id="ev-lista">
+            <span style="color:var(--testo-muted);font-size:0.8rem;font-style:italic">Nessuna evidenziazione</span>
+          </div>
+          <button class="sidebar-btn" id="ev-a-note">Aggiungi agli appunti</button>
+          <button class="sidebar-btn" id="ev-svuota">Svuota evidenziazioni</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9656; Avanzamento lettura</div>
+        <div class="sidebar-card__body">
+          <p class="progresso-lezione">Lettura: 0%</p>
+          <div class="barra-progresso"><div class="barra-progresso__fill"></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="overlay-fullscreen" id="overlay-fullscreen">
+    <span class="overlay-chiudi" id="overlay-chiudi">&times;</span>
+    <img id="overlay-img" src="" alt="">
+  </div>
+
+  <button class="banner-concentrazione" id="banner-concentrazione">&#9635; Esci dalla concentrazione</button>
+
+  <footer class="site-footer">
+    <p>Materiali didattici su <strong>Ugo Foscolo</strong> &mdash; Quinto anno di Liceo</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+</body>
+</html>

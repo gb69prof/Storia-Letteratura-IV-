@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1a2a">
+  <title>L'immagine del mondo — Ugo Foscolo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="mondo">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html">
+        <div class="site-header__monogram">UF</div>
+        <div>
+          <div class="site-header__title">Ugo Foscolo</div>
+          <div class="site-header__subtitle">Quinto anno &middot; Liceo</div>
+        </div>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html">Indice</a>
+        <button class="btn-header" id="btn-concentrazione">&#9635; Concentrazione</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Indice</a>
+    <span>›</span>
+    <span>L'immagine del mondo</span>
+  </div>
+
+  <div class="lezione-layout">
+    <article class="lezione-contenuto">
+      <div class="lezione-num">Lezione IV</div>
+<h1>L'immagine del mondo</h1>
+<div class="video-lezione">
+<iframe src="https://app.heygen.com/embeds/0a65fec0887f4f0e9eb32b1731113cd1" title="FoscoloNeoPre" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+<p>Foscolo vive a cavallo tra due visioni del mondo che l'Europa stava elaborando simultaneamente, e non sceglie tra le due: le abita entrambe, con piena consapevolezza della loro incompatibilità.</p>
+<p>La prima è quella neoclassica. Il Neoclassicismo guarda all'antichità greco-romana come modello di perfezione: bellezza, misura, armonia, equilibrio formale. La natura non è minacciosa ma ordinata, l'arte non esprime il disordine interiore ma lo disciplina e lo trascende. I temi sono il mito, l'eroismo, la patria vista come valore etico. La forma è curata, chiusa, controllata: il sonetto, l'ode, l'endecasillabo. Per il Foscolo neoclassico, la bellezza è una risposta all'angoscia — non perché la cancelli, ma perché la contiene e le dà forma.</p>
+<p>La seconda visione è quella preromantica. Qui la natura non è armonica ma tempestosa e selvaggia, specchio di un animo inquieto. I temi sono il dolore, la morte, l'esilio, l'amore impossibile, l'infinito irraggiungibile. La soggettività non viene disciplinata ma esibita, il conflitto interiore non viene risolto ma mostrato nella sua crudezza. L'influenza viene dall'Inghilterra (Young, Gray, Ossian) e dalla Germania (Goethe, con il Werther che Foscolo conosce bene). Per il Foscolo preromantico, l'arte non contiene il dolore: lo porta a temperatura massima.</p>
+<p>Queste due visioni non convivono pacificamente in Foscolo: si combattono. È neoclassico nella forma e nell'aspirazione al bello eterno, preromantico nella sensibilità, nell'inquietudine esistenziale, nella passione. Questa «doppia tensione» non è un difetto della sua poetica né un'incongruenza biografica: è la condizione di chi vive autenticamente un'epoca di transizione, senza farsi rassicurare da nessuna delle due risposte disponibili.</p>
+<p>Il mondo che Foscolo abita è quindi un mondo senza centro stabile: né la fede religiosa (rifiutata), né la ragione illuminista (insufficiente), né la passione romantica (destinata alla sconfitta) riescono a tenerlo in piedi da sole. La sua risposta non è la sintesi tra le due correnti — sarebbe troppo ordinata — ma la loro coesistenza tesa, produttiva, irrisolta.</p>
+
+      <img class="img-lezione" src="assets/images/neoclassicismo.jpg" alt="Schema del Neoclassicismo" loading="lazy">
+      <p class="img-didascalia">Schema del Neoclassicismo</p>
+
+      <img class="img-lezione" src="assets/images/preromanticismo.jpg" alt="Schema del Preromanticismo" loading="lazy">
+      <p class="img-didascalia">Schema del Preromanticismo</p>
+
+      <nav class="lezione-nav">
+        <a class="btn-nav" href="frattura.html">&#8592; La frattura iniziale</a>
+        <a class="btn-nav btn-nav--primary" href="poetica.html">La poetica &#8594;</a>
+      </nav>
+    </article>
+
+    <aside class="lezione-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9998; Appunti personali</div>
+        <div class="sidebar-card__body">
+          <textarea id="appunti-textarea" placeholder="Scrivi qui i tuoi appunti…"></textarea>
+          <button class="sidebar-btn" id="note-salva">Salva appunti</button>
+          <button class="sidebar-btn" id="note-esporta">Esporta .txt</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#11835; Evidenziazioni</div>
+        <div class="sidebar-card__body">
+          <div class="evidenziazioni-lista" id="ev-lista">
+            <span style="color:var(--testo-muted);font-size:0.8rem;font-style:italic">Nessuna evidenziazione</span>
+          </div>
+          <button class="sidebar-btn" id="ev-a-note">Aggiungi agli appunti</button>
+          <button class="sidebar-btn" id="ev-svuota">Svuota evidenziazioni</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9656; Avanzamento lettura</div>
+        <div class="sidebar-card__body">
+          <p class="progresso-lezione">Lettura: 0%</p>
+          <div class="barra-progresso"><div class="barra-progresso__fill"></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="overlay-fullscreen" id="overlay-fullscreen">
+    <span class="overlay-chiudi" id="overlay-chiudi">&times;</span>
+    <img id="overlay-img" src="" alt="">
+  </div>
+
+  <button class="banner-concentrazione" id="banner-concentrazione">&#9635; Esci dalla concentrazione</button>
+
+  <footer class="site-footer">
+    <p>Materiali didattici su <strong>Ugo Foscolo</strong> &mdash; Quinto anno di Liceo</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+</body>
+</html>

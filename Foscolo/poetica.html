@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1a2a">
+  <title>La poetica — Ugo Foscolo</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-pagina="poetica">
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html">
+        <div class="site-header__monogram">UF</div>
+        <div>
+          <div class="site-header__title">Ugo Foscolo</div>
+          <div class="site-header__subtitle">Quinto anno &middot; Liceo</div>
+        </div>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html">Indice</a>
+        <button class="btn-header" id="btn-concentrazione">&#9635; Concentrazione</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html">Indice</a>
+    <span>›</span>
+    <span>La poetica</span>
+  </div>
+
+  <div class="lezione-layout">
+    <article class="lezione-contenuto">
+      <div class="lezione-num">Lezione V</div>
+<h1>La poetica</h1>
+<div class="video-lezione">
+<iframe src="https://app.heygen.com/embeds/2094fd29f75c44b0bb0c304f8844557b" title="FoscoloReligioneIllusioni" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+<p>La poesia, per Foscolo, non è ornamento né intrattenimento. È l'unico strumento che l'uomo possiede per resistere al nulla. Questa affermazione va presa sul serio, non come metafora: Foscolo crede genuinamente che la parola poetica abbia una funzione salvifica che nessun'altra forma di discorso — né la filosofia, né la scienza, né la religione — può svolgere allo stesso modo.</p>
+<p>La ragione sta nel modo in cui la poesia tratta il tempo. Tutto è destinato all'oblio: le persone, le azioni, persino le civiltà. Ma la parola del poeta può sottrarre qualcosa a questo oblio, non con l'inganno ma con la forza della forma. Un sonetto ben costruito sopravvive al poeta che l'ha scritto, sopravvive alla situazione che l'ha generato, diventa un «sepolcro simbolico» in cui la memoria rimane viva anche quando tutto il resto è scomparso. I <em>Sepolcri</em> elaborano questa idea su scala civile: non sono le tombe di pietra che conservano la memoria degli eroi, ma i canti dei poeti che le celebrano. Omero sopravvive a Troia.</p>
+<p>Il poeta ha quindi un compito che non è solo estetico ma etico: custodire ciò che merita di essere ricordato, dare forma al dolore in modo che diventi comunicabile, trasformare l'esperienza privata in qualcosa che appartiene a tutti. Questa è la funzione civile dell'arte che Foscolo rivendica con forza, contro qualsiasi concezione della poesia come lusso o svago.</p>
+<p>Sul piano formale, la poetica di Foscolo privilegia la densità rispetto all'abbondanza. I sonetti sono pochi ma costruiti con una precisione che non lascia niente al caso: ogni parola porta peso, ogni immagine è scelta perché necessaria. Il carme — forma lunga, in endecasillabi sciolti — gli permette di sviluppare meditazioni filosofiche senza perdere il controllo del tono. Non scrive mai con facilità apparente: la fatica è visibile, e fa parte del significato.</p>
+<p>La bellezza, per Foscolo, non è mai fine a se stessa. È sempre, in qualche misura, una risposta all'angoscia. Il sonetto come «piccolo tempio costruito con parole eterne» non abbellisce il dolore: lo contiene, lo eleva, lo rende sopportabile senza renderlo falso. Questa è forse la definizione più precisa della sua poetica: verità contenuta nella forma, forma che non mente sulla verità.</p>
+
+      <img class="img-lezione" src="assets/images/schema_poetica.jpg" alt="Schema della poetica foscoliana" loading="lazy">
+      <p class="img-didascalia">Schema della poetica foscoliana</p>
+
+      <nav class="lezione-nav">
+        <a class="btn-nav" href="mondo.html">&#8592; L'immagine del mondo</a>
+        <a class="btn-nav btn-nav--primary" href="opere.html">Le opere principali &#8594;</a>
+      </nav>
+    </article>
+
+    <aside class="lezione-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9998; Appunti personali</div>
+        <div class="sidebar-card__body">
+          <textarea id="appunti-textarea" placeholder="Scrivi qui i tuoi appunti…"></textarea>
+          <button class="sidebar-btn" id="note-salva">Salva appunti</button>
+          <button class="sidebar-btn" id="note-esporta">Esporta .txt</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#11835; Evidenziazioni</div>
+        <div class="sidebar-card__body">
+          <div class="evidenziazioni-lista" id="ev-lista">
+            <span style="color:var(--testo-muted);font-size:0.8rem;font-style:italic">Nessuna evidenziazione</span>
+          </div>
+          <button class="sidebar-btn" id="ev-a-note">Aggiungi agli appunti</button>
+          <button class="sidebar-btn" id="ev-svuota">Svuota evidenziazioni</button>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card__header">&#9656; Avanzamento lettura</div>
+        <div class="sidebar-card__body">
+          <p class="progresso-lezione">Lettura: 0%</p>
+          <div class="barra-progresso"><div class="barra-progresso__fill"></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="overlay-fullscreen" id="overlay-fullscreen">
+    <span class="overlay-chiudi" id="overlay-chiudi">&times;</span>
+    <img id="overlay-img" src="" alt="">
+  </div>
+
+  <button class="banner-concentrazione" id="banner-concentrazione">&#9635; Esci dalla concentrazione</button>
+
+  <footer class="site-footer">
+    <p>Materiali didattici su <strong>Ugo Foscolo</strong> &mdash; Quinto anno di Liceo</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+</body>
+</html>
